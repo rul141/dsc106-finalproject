@@ -21,7 +21,7 @@ function lineplot(data){
         chart: {
             type: 'line',
             style: {
-                fontFamily: 'fantasy'
+                fontFamily: 'futura'
             }
         },
         legend: {
@@ -102,7 +102,7 @@ function pieplot_gender(data){
             plotShadow: false,
             type: 'pie',
             style: {
-                fontFamily: 'fantasy'
+                fontFamily: 'futura'
             }
         },
         exporting:{
@@ -168,7 +168,7 @@ function pieplot_company(){
             plotShadow: false,
             type: 'pie',
             style: {
-                fontFamily: 'fantasy'
+                fontFamily: 'futura'
             }
         },
         exporting:{
@@ -225,7 +225,7 @@ function map(data){
         chart: {
             map: 'countries/us/us-all',
             borderWidth: 0,
-            fontFamily: 'fantasy'
+            fontFamily: 'futura'
             
         },
         exporting:{
@@ -236,7 +236,7 @@ function map(data){
         title: {
             text: 'Concert Distribution by State',
             style:{
-                fontFamily: 'fantasy'
+                fontFamily: 'futura'
             }
         },
         legend:{
@@ -301,7 +301,7 @@ function barplot_venue(){
         chart: {
             type: 'column',
             style: {
-                fontFamily: 'fantasy'
+                fontFamily: 'futura'
             }
         },
         title: {
@@ -359,7 +359,7 @@ function barplot_company_venue(){
         chart: {
             type: 'column',
             style: {
-                fontFamily: 'fantasy'
+                fontFamily: 'futura'
             }
         },
         exporting:{
