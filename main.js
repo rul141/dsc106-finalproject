@@ -418,15 +418,15 @@ function barplot_company_venue(){
     });
 }
 function init() {
-    data1 = loadJSON('../total_tour_by_year.json');
+    data1 = loadJSON('total_tour_by_year.json');
     data1.then(function (data) {
         lineplot(data);
     })
-    data2 = loadJSON('../total_tour_by_gender.json');
+    data2 = loadJSON('total_tour_by_gender.json');
     data2.then(function (data) {
         pieplot_gender(data);
     })
-    data3 = loadJSON('../concert_by_state.json');
+    data3 = loadJSON('concert_by_state.json');
     data3.then(function (data) {
         map(data);
     })
