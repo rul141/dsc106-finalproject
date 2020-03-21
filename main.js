@@ -417,117 +417,6 @@ function barplot_company_venue(){
         }]
     });
 }
-function barplot_AlbumSale_Gender(){
-    Highcharts.chart('container5', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Male Group get more money'
-        },
-        subtitle: {
-            text: 'Total number of Album Sale by Gender'
-        },
-        xAxis: {
-            categories: ["Male", "Female"],
-            crosshair: true
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Total Album Sale'
-            }
-        },
-        legend:{
-            enabled:false
-        },
-        plotOptions:{
-            series: {
-                states:{
-                    inactive: {
-                        opacity: 1
-                    }
-                },
-                pointPadding: 0.04,
-                groupPadding: 0.06,
-            },
-        },
-        tooltip: {
-            enabled: true,
-            formatter: function () {
-                return this.y;
-            },
-            followPointer: true,
-            shadow: false,
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: "Company",
-            data: [11575126, 1387977]
-        }]
-    });
-}
-function barplot_AlbumSale_Company(){
-    Highcharts.chart('container6', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Big Company get more money'
-        },
-        subtitle: {
-            text: 'Total number of Album Sale by Company'
-        },
-        xAxis: {
-            categories: ["Big Company", "Small Company"],
-            crosshair: true
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Total Album Sale'
-            }
-        },
-        legend:{
-            enabled:false
-        },
-        plotOptions:{
-            series: {
-                states:{
-                    inactive: {
-                        opacity: 1
-                    }
-                },
-                pointPadding: 0.04,
-                groupPadding: 0.06,
-            },
-        },
-        tooltip: {
-            enabled: true,
-            formatter: function () {
-                return this.y;
-            },
-            followPointer: true,
-            shadow: false,
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: "Company",
-            data: [11122321, 1840782]
-        }]
-    });
-
-}
 function init() {
     data1 = loadJSON('../total_tour_by_year.json');
     data1.then(function (data) {
@@ -544,8 +433,5 @@ function init() {
     barplot_venue();
     pieplot_company();
     barplot_company_venue();
-    barplot_AlbumSale_Gender();
-    barplot_AlbumSale_Company();
-
 }
 document.addEventListener('DOMContentLoaded', init, false);
